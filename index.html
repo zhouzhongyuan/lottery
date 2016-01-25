@@ -11,25 +11,25 @@
     Your browser does not support the audio element.
 </audio>
 <div id="lottery">
-        <section class="box">
-            <div class="flex1  lottery-unit lottery-unit-1"><img src="images/1.png"></div>
+        <section class="box flex1">
+            <div class="flex1  lottery-unit lottery-unit-1"><span class="">暖壶1个</span><span class="">￥800</span></div>
             <div class="flex1  lottery-unit lottery-unit-2"><img src="images/2.png"></div>
             <div class="flex1  lottery-unit lottery-unit-3"><img src="images/4.png"></div>
             <div class="flex1  lottery-unit lottery-unit-4"><img src="images/3.png"></div>
         </section>
-        <section  class="box">
+        <section  class="box flex1">
             <div class="flex1   lottery-unit lottery-unit-10"><img src="images/7.png"></div>
             <div class="flex2"><a href="">抽奖</a></div>
             <div class="flex1   lottery-unit lottery-unit-5"><img src="images/5.png"></div>
         </section>
-        <section  class="box">
+        <section  class="box flex1">
             <div class="flex1  lottery-unit lottery-unit-9"><img src="images/3.png"></div>
             <div class="flex1  lottery-unit lottery-unit-8"><img src="images/6.png"></div>
             <div class="flex1  lottery-unit lottery-unit-7"><img src="images/8.png"></div>
             <div class="flex1  lottery-unit lottery-unit-6"><img src="images/7.png"></div>
         </section>
 </div>
-<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
 <script type="text/javascript">
     var lottery = {
         index: -1,	//当前转动到哪个位置，起点位置
@@ -122,5 +122,6 @@
         });
     };
 </script>
+<script src="js/index.js"></script>
 </body>
 </html>

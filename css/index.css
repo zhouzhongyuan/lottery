@@ -1,28 +1,29 @@
 #lottery {
-    /*width: 574px;*/
-    /*height: 584px;*/
-    /*margin: 20px auto 0;*/
-    /*background: url(../images/bg.jpg) no-repeat;*/
-    /*padding: 50px 55px;*/
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    border-style: solid;
+     border-width: 27px;
+    border-image: url(http://www.w3.org/TR/css3-background/border.png) 27 fill repeat;
 }
 
-#lottery table td {
-    width: 142px;
-    height: 142px;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 24px;
-    color: #333;
-    font-index: -999
-}
+/*#lottery table td {*/
+    /*width: 142px;*/
+    /*height: 142px;*/
+    /*text-align: center;*/
+    /*vertical-align: middle;*/
+    /*font-size: 24px;*/
+    /*color: #333;*/
+    /*font-index: -999*/
+/*}*/
 
-#lottery table td a {
-    width: 284px;
-    height: 284px;
-    line-height: 150px;
-    display: block;
-    text-decoration: none;
-}
+/*#lottery table td a {*/
+    /*width: 284px;*/
+    /*height: 284px;*/
+    /*line-height: 150px;*/
+    /*display: block;*/
+    /*text-decoration: none;*/
+/*}*/
 
 #lottery .active {
     background-color: #ea0000;
@@ -32,6 +33,7 @@ body{
 }
 .box{
     display: flex;
+    position: relative;
 }
 .flex1{
     flex: 1;
@@ -39,9 +41,30 @@ body{
 .flex2{
     flex: 2;
 }
-#lottery{
-
-}
-.box .flex1{
+.box > .flex1,
+.box > .flex2{
     background-color: silver;
+    border-radius: 5px;
+    border: 10px solid #F9BB0C;
+    margin: 20px;
+}
+.box > .flex2 {
+    margin: 20px 10px;
+    padding: 0 20px;
+}
+.lottery-unit-1{
+    background-image: url("../images/1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.lottery-unit span{
+    flex: 1;
+    background-color: rgba(0,0,0,0.1);
+    color: #ffffff;
+}
+.lottery-unit{
+    display: flex;
+    /*align-items: flex-end;*/
+    justify-content: flex-end;
+    flex-direction: column;
 }
